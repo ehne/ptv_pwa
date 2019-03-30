@@ -203,7 +203,7 @@ body {
     height:5vh
 }
 a:hover{
-    color:#fa0
+    color:#fa0 !important
 }
 
 h1 {
