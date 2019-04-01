@@ -30,6 +30,7 @@ Zepto(function($){
        //alert("est = " + est);
        // alert("sche = " + sche);
         // check to see if est is a null
+        
         if (data.departures[0].estimated_departure_utc == null) {
             var disrupt_id = data.departures[0].disruption_ids[0];
             alert(data.disruptions[disrupt_id].description);
@@ -53,7 +54,7 @@ Zepto(function($){
             $('#dataContainer').html(time + " " + pluralize('minute', time));  
         }
         $.getJSON("https://timetableapi.ptv.vic.gov.au/v3/pattern/run/952519/route_type/0?expand=all&stop_id=1152&devid=3001117&signature=E2B25BE9E0C13B343BA584029755B8B2097C1F13", function(data){
-            alert("aaaaahhh "+new Date('2019-04-01T09:33:00Z'))
+            alert(new Date('2019-04-02T04:54:00Z'))
         });
         
     })
